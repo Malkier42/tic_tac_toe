@@ -3,7 +3,8 @@ import React from 'react';
 class TicTacToeBoard extends React.Component {
   onClick(id) {
     if (this.isActive(id)) {
-      this.props.move.clickCell(id);
+      console.log(this.props);
+      this.props.moves.clickCell(id);
       this.props.events.endTurn();
     }
   }
@@ -57,3 +58,5 @@ class TicTacToeBoard extends React.Component {
     );
   }
 }
+
+export default TicTacToeBoard;
